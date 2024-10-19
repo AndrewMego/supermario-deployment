@@ -30,8 +30,8 @@ pipeline {
                         sh '''aws eks --region us-east-1 update-kubeconfig --name supermario-eks-cluster'''
 
                         //  Deploy an application
-                        //sh "kubectl apply -f deployment.yaml --validate=false"
-                        sh "kubectl apply -f deployment.yaml"
+                        sh "kubectl apply -f deployment.yaml --validate=false"
+                        //sh "kubectl apply -f deployment.yaml"
                         //  Deploy a service
                         sh "kubectl apply -f service.yaml"
                     }
