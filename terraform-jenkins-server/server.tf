@@ -2,7 +2,7 @@
 resource "aws_instance" "jenkins-server" {
   ami                         = "ami-005fc0f236362e99f"
   instance_type               = var.instance_type
-  key_name                    = "SuperMarioKey222"
+  key_name                    = "Key_Andrew"
   subnet_id                   = aws_subnet.jenkins-subnet-1.id
   vpc_security_group_ids      = [aws_default_security_group.jenkins-sg.id]
   availability_zone           = var.availability_zone
